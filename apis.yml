@@ -1,7 +1,27 @@
 aid: curefoods
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/curefoods.png
 name: Curefoods
-description: 'Curefoods is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Curefoods is a Bengaluru-based multi-brand cloud kitchen and quick-service
+  restaurant company founded in 2020 that builds and operates iconic Indian food brands.
+  As of March 2025 it runs roughly 502 outlets across India (about 281 cloud kitchens,
+  99 kiosks, and 122 restaurants) under a house-of-brands model including Kitchens
+  of EatFit, Sharief Bhai, Olio Pizza, Nomad Pizza, Arambam, CakeZone, Frozen Bottle,
+  and Krispy Kreme. Backed by Accel, Chiratae Ventures, and Iron Pillar, the company
+  crossed roughly Rs 746 crore in FY25 revenue and has received SEBI approval for an
+  IPO. Curefoods is a consumer food operator with no public developer API or documentation
+  surface; this profile was added to the API Evangelist network as a portfolio lead
+  and carries only identity, domain-security, and public-property signals.'
 url: https://raw.githubusercontent.com/api-evangelist/curefoods/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,16 +31,40 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
-apis: []
+- Food and Beverage
+- Cloud Kitchen
+- Restaurants
+- Food Delivery
+- India
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis: []
 common:
+- type: DomainSecurity
+  url: security/curefoods-domain-security.yml
 - type: Website
   url: https://curefoods.in/
+- type: About
+  url: https://curefoods.in/about
+- type: Blog
+  url: https://curefoods.in/blog
+- type: Support
+  url: https://curefoods.in/contact
+- type: PrivacyPolicy
+  url: https://curefoods.in/privacy-policy
+- type: TermsOfService
+  url: https://curefoods.in/terms-conditions
+- type: Careers
+  url: https://curefoods.in/careers
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
